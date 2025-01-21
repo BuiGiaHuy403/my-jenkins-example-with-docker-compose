@@ -21,7 +21,7 @@ pipeline {
         stage("Starting with Container"){
             steps{
                 sh '''
-                    docker compuse up -d --no-color --wait
+                    docker compose up -d --no-color --wait
                     docker compose ps
                 '''
             }
